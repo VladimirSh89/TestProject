@@ -19,10 +19,12 @@ public class TestSelenium {
 			
 		String getUrl = connect.getUrl();
 		System.out.println(getUrl);
-
+		
+		String test = connect.getData();
+		
 		WebElement searchField;
 		searchField = driver.findElement(By.className("gsfi"));
-		searchField.sendKeys("Test Selenium");
+		searchField.sendKeys(test);
 		Thread.sleep(5000);
 		
 		WebElement button;
